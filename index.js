@@ -6,7 +6,6 @@ const mysql = require('mysql2');
 const nodemailer = require('nodemailer');
 const app = express();
 const PORT =  process.env.PORT || 8080; 
-const favicon = require("serve-favicon");
 
 
 
