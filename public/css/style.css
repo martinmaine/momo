@@ -1,0 +1,151 @@
+  body {
+    font-family: 'Poppins';
+
+  }
+  
+  .header {
+    margin-top: 0;
+    background-color: rgb(160, 160, 160);
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: 10000;
+  }
+  
+  header.abajo {
+    background-color: rgb(31, 31, 31);
+    transition: 2s;
+    height: 90px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-left: 10px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+.logo {
+align-items: center;
+margin-top: 20px;
+z-index: 10000;
+}
+
+
+.logo img {
+width: 200px;
+}
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 0, 0 , 10px, 0;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover{
+    color:#d29c48; 
+  }
+
+  .nav-menu-link_active {
+    background-color: #222222;
+    background-image: url(/multimedia/plantaGris.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.5s;
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+  }
+
+  /* MOBILE */
+  @media (max-width: 885px) {
+  
+    .header {
+      height: 80px;
+      z-index: 100000;
+      background-color:rgb(194, 194, 194);
+      transition: 2s;
+    }
+
+    header.abajo {
+      height: 80px;
+      z-index: 100000;
+      background-color: rgb(31, 31, 31);
+      transition: 2s;
+    } 
+  
+    .logo {
+      font-size: 25px;
+      z-index: 10000;
+      margin-top: 10px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #1d1d1d;
+      position: fixed;
+      top: 80px;
+      width: 100%;
+      padding: 20px 0;
+      height: calc(100% - 60px);
+      overflow-y: auto;
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      color:#d29c48; 
+    }
+  
+
+    .nav-toggle {
+      display: block;
+      margin-top: 10px;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+  }

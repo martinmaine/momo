@@ -1,0 +1,38 @@
+<div class="container"> 
+<h1>
+    Contacto
+</h1>
+
+<h2>
+    {{ titulo }}
+</h2>
+
+<form action="./contacto" method="post"> 
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" name="nombre" id="nombre">
+    </div>
+
+    <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+    <input type="email" class="form-control" name= "email" id="email" placeholder="ejemplo@ejemplo.com">
+    </div>
+
+    <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label"></label>
+    <textarea class="form-control" name="texto" id="texto" placeholder="Mensaje" rows="3"></textarea>
+    </div>
+
+    <div class="col-12">
+        <button class="btn btn-secondary" type="submit">Enviar</button>
+    </div>
+
+</form>
+
+    <div class="text-center">
+        <h2 class="text-danger"> 
+            {{ validacion }}
+        </h2>
+    </div>
+
+</div>

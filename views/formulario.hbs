@@ -1,0 +1,63 @@
+<div class="container">
+<h1>
+    Suscripción
+</h1>
+
+<h2>
+    {{ titulo }}
+</h2>
+<form action="./formulario" method="post">
+
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" name="nombre" id="nombre">
+    </div>
+
+    <div class="mb-3">
+    <label for="email" class="form-label">Correo electrónico</label>
+    <input type="email" class="form-control" name="email" id="email" placeholder="ejemplo@ejemplo.com">
+    </div>
+
+    <div class="provincia">
+        <label>Provincia</label>
+            <select class="form-select" aria-label="Default select example" name="provincia" id="provincia">
+                <option selected>Seleccioná tu provincia</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Ciudad de Buenos Aires">Ciudad de Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucumán">Tucumán</option>
+            </select>
+    </div>
+    <br>
+    <div class="col-12">
+        <button class="btn btn-secondary" type="submit">Enviar</button>
+    </div>
+
+    <div class="text-center">
+        <h2 class="text-danger"> 
+            {{ validacion }}
+        </h2>
+    </div>
+
+</form>
+
+</div>
