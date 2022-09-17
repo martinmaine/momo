@@ -20,8 +20,8 @@ const conexion= mysql.createConnection({
 
 conexion.connect((err) => {
     if (err) {
-        console.error (`Error en la conexión: ${err,stack}`)
-        return; 
+/*         console.error (`Error en la conexión: ${err,stack}`)
+        return;  */
 }
         /* console.log(`Conectado a la Base de datos ${process.env.DATABASE}`); */
 })
