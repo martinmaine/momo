@@ -75,8 +75,8 @@ app.post('/formulario', (req, res, next) => {
     
     let sql= 'INSERT INTO y8s8duza2lox2u7m.suscriptores SET?';
     
-        conexion.query(sql, datos, (/* err, */ res) => {
-           /*  if (err) throw err; */
+        conexion.query(sql, datos, (err, res) => {
+             if (err) throw err; 
     
         })
     
